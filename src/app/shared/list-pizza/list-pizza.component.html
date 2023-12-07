@@ -7,9 +7,9 @@
         <div class="card-stacked">
           <div class="card-content" style="font-size: 12px;"><p>{{ singlePizza.name }}</p>
             <p>
-              <small>{{singlePizza.created | date}}</small>
+              <small>{{singlePizza.created}}</small>
             </p>
-            <span *ngFor="let ingredient of singlePizza.compositions">{{ingredient}}</span>
+            <span *ngFor="let ingredient of singlePizza.compositions" class="{{ingredient| pizzaIngredientColor}}">{{ingredient}}</span>
           </div>
         </div>
       </div>

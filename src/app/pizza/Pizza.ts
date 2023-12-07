@@ -1,7 +1,7 @@
 
 export class Pizza{
 
-id : number | undefined;
+id : string | undefined;
 name : string | undefined;
 nutriScore: string | undefined;
 picture : string | undefined;
